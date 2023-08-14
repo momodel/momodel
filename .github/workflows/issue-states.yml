@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: Sync issue states
-        uses: dasmerlon/project-issue-state-sync@v2
+        uses: lzfxxx/project-issue-state-sync@v2.0.2
         with:
           github_token: ${{ secrets.PROJECT_ISSUE_SYNC_TOKEN }}
           owner: momodel
