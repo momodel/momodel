@@ -17,7 +17,7 @@ jobs:
         uses: dasmerlon/project-issue-state-sync@v2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          owner: momodel
+          owner: Acrobaticat
           project_number: 1
           closed_statuses: 需求池,需求讨论中,产品设计中,排期中,开发中,测试中,Sprint
           open_statuses: 已结束
