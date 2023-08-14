@@ -1,0 +1,23 @@
+name: Project Issue State Sync
+
+on: 
+  schedule:
+    # At minute 0 every 1 hours
+    - cron: 0 0-23/1 * * *
+  
+  workflow_dispatch:
+    # Manual trigger
+
+jobs:
+  issue-state-sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Sync issue states
+        uses: dasmerlon/project-issue-state-sync@v2
+        with:
+          github_token: ${{ secrets.ACTIONS_PUSH_TOKEN }}
+          owner: momodel
+          project_number: 1
+          closed_statuses: 需求池,需求讨论中,产品设计中,排期中,开发中,测试中,Sprint
+          open_statuses: 已结束
