@@ -16,7 +16,7 @@ jobs:
       - name: Sync issue states
         uses: dasmerlon/project-issue-state-sync@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.PROJECT_ISSUE_SYNC_TOKEN }}
           owner: momodel
           project_number: 10
           closed_statuses: 需求池,需求讨论中,产品设计中,排期中,开发中,测试中,Sprint
