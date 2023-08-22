@@ -20,4 +20,4 @@ jobs:
           owner: momodel
           project_number: 10
           closed_statuses: 已结束
-          open_statuses: 需求池,需求讨论中,产品设计中,排期中,开发中,测试中,Sprint
+          open_statuses: 需求池,需求讨论中,产品设计中（PRD与原型制作输出）,UI/UX 设计中（高保真制作输出）,排期中（待开发与时间评估）,开发中,测试中,Sprint
