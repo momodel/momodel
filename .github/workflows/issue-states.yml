@@ -38,4 +38,8 @@ jobs:
           owner: momodel
           project_number: 14
           closed_statuses: "✅ Done"
-          open_statuses: "🆕 New", "🔖 Ready", "🏗 In progress", "👀 In review"
+          open_statuses: |
+            🆕 New
+            🔖 Ready
+            🏗 In progress
+            👀 In review
