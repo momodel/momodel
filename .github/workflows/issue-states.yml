@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Sync issue states for project 10
+      - name: Mo 项目管理
         uses: lzfxxx/project-issue-state-sync@v2.0.3
         with:
           github_token: ${{ secrets.PROJECT_ISSUE_SYNC_TOKEN }}
@@ -22,7 +22,7 @@ jobs:
           closed_statuses: 已结束
           open_statuses: 需求池,需求讨论中（产品工程师）,产品设计中（PRD与原型制作输出）,UI/UX 设计中（高保真制作输出）,排期中（待开发与时间评估）,开发中,测试中,Sprint
 
-      - name: Sync issue states for project 11
+      - name: Bug 管理
         uses: lzfxxx/project-issue-state-sync@v2.0.3
         with:
           github_token: ${{ secrets.PROJECT_ISSUE_SYNC_TOKEN }}
@@ -30,3 +30,12 @@ jobs:
           project_number: 11
           closed_statuses: 已结束
           open_statuses: 待修复,修复中,待验证,验证通过
+
+      - name: 市场运营项目进度管理
+        uses: lzfxxx/project-issue-state-sync@v2.0.3
+        with:
+          github_token: ${{ secrets.PROJECT_ISSUE_SYNC_TOKEN }}
+          owner: momodel
+          project_number: 14
+          closed_statuses: "✅ Done"
+          open_statuses: "🆕 New", "🔖 Ready", "🏗 In progress", "👀 In review"
