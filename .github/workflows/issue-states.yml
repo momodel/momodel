@@ -37,9 +37,5 @@ jobs:
           github_token: ${{ secrets.PROJECT_ISSUE_SYNC_TOKEN }}
           owner: momodel
           project_number: 14
-          closed_statuses: "✅ Done"
-          open_statuses: |
-            🆕 New
-            🔖 Ready
-            🏗 In progress
-            👀 In review
+          closed_statuses: ✅ Done
+          open_statuses: 🆕 New,🔖 Ready,🏗 In progress,👀 In review
